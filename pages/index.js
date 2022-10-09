@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import Image from 'next/image'
 import {FaSearch, FaMicrophone} from 'react-icons/fa'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -31,7 +32,7 @@ export default function Home() {
         
       </form>
 
-      {/* Footer */}
+      <Footer />
 
     </div>
   )
