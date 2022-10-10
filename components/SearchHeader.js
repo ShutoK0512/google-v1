@@ -29,7 +29,7 @@ function SearchHeader() {
                     <input type="text" defaultValue={router.query.term} ref={searchInputRef} 
                     className="w-full focus:outline-none"/>
 
-                    <FaTimes onClick={() => (searchInputRef.current.value = '')} className="h-7 text-gray-500 cusor-pointer sm:mr-3" />
+                    <FaTimes className="h-7 text-gray-500 cursor-pointer sm:mr-3" onClick={() => (searchInputRef.current.value = '')}  />
                     <FaMicrophone className="6 hidden sm:inline-flex text-blue-500 border-l-2 border-gray-300 mr-3" />
                     <FaSearch className="6 hidden sm:inline-flex text-blue-500" />
                     <button onClick={search} type="submit" hidden></button>
